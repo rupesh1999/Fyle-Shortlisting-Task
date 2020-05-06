@@ -205,20 +205,22 @@ export default function Section3() {
         </Grid>
         <Grid style={{ marginTop: 40 }} item xs={11} md={8}>
           <Grid container justify="center">
-              <Paper data-aos="fade-right" elevation={1}>
-                <Tabs
-                  value={value}
-                  indicatorColor="primary"
-                  textColor="primary"
-                  onChange={handleTabChange}
-                  aria-label="disabled tabs example"
-                >
-                  <Tab label="25 Servin" />
-                  <Tab label="50 Servin" />
-                  <Tab label="100 Servin" />
-                  <Tab label="200 Servin" />
-                </Tabs>
-              </Paper>
+            <Paper data-aos="fade-right" elevation={1}>
+              <Tabs
+                value={value}
+                indicatorColor="primary"
+                textColor="primary"
+                onChange={handleTabChange}
+                variant="scrollable"
+                scrollButtons="auto"
+                aria-label="disabled tabs example"
+              >
+                <Tab label="25 Servin" />
+                <Tab label="50 Servin" />
+                <Tab label="100 Servin" />
+                <Tab label="200 Servin" />
+              </Tabs>
+            </Paper>
             <Grid style={{ marginTop: 80 }} item xs={12}>
               <Grid container spacing={3} justify="center">
                 <Grid
@@ -257,8 +259,13 @@ export default function Section3() {
                     </CardContent>
                   </Card>
                 </Grid>
-                <Grid data-aos="flip-left" data-aos-duration="1000" item xs={11}
-                  md={4}>
+                <Grid
+                  data-aos="flip-left"
+                  data-aos-duration="1000"
+                  item
+                  xs={11}
+                  md={4}
+                >
                   <Card elevation={2} className={classes.root}>
                     <CardContent>
                       <Typography
@@ -287,8 +294,13 @@ export default function Section3() {
                     </CardContent>
                   </Card>
                 </Grid>
-                <Grid data-aos="flip-left" data-aos-duration="1000" item xs={11}
-                  md={4}>
+                <Grid
+                  data-aos="flip-left"
+                  data-aos-duration="1000"
+                  item
+                  xs={11}
+                  md={4}
+                >
                   <Card elevation={2} className={classes.root}>
                     <CardContent>
                       <Typography

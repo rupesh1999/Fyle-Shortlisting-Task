@@ -65,7 +65,7 @@ const useStyles = makeStyles(theme => ({
 const Section1 = () => {
   const classes = useStyles();
   return (
-    <div data-aos="zoom-in" data-aos-duration="400">
+    <div data-aos="zoom-in" data-aos-duration="600">
       <Grid
         className={classes.root}
         justify="center"

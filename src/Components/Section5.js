@@ -63,14 +63,14 @@ const useStyles = makeStyles(theme => ({
 const Section1 = () => {
   const classes = useStyles();
   return (
-    <div data-aos="zoom-in" data-aos-duration="400">
+    <div>
       <Grid
         className={classes.root}
         justify="center"
         alignItems="center"
         container
       >
-        <Grid item xs={10} md={6}>
+        <Grid  data-aos="zoom-in" data-aos-duration="600" item xs={10} md={6}>
           <Typography className={classes.title} variant="h3" gutterBottom>
             Loved by users, recommended by experts
           </Typography>
@@ -85,7 +85,7 @@ const Section1 = () => {
             </Button>
           </div>
         </Grid>
-        <Grid item xs={10} md={3}>
+        <Grid  data-aos="zoom-in" data-aos-duration="600" item xs={10} md={3}>
           <Grid container justify="center">
             <img className={classes.img} src={image} />
           </Grid>
