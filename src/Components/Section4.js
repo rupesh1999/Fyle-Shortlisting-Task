@@ -37,6 +37,13 @@ const useStyles = makeStyles({
 });
 
 export default function Section4() {
+  const handelResize = () => {
+    setWidth(window.innerWidth);
+  }
+  React.useEffect(() => {
+    window.addEventListener("resize" , handelResize);
+  });
+  const [width , setWidth] = React.useState(window.innerWidth);
   const classes = useStyles();
   return (
     <div data-aos="slide-up" data-aos-duration="1000">
@@ -54,7 +61,7 @@ export default function Section4() {
         <Grid item xs={8}>
           <CarouselProvider
             naturalSlideWidth={100}
-            naturalSlideHeight={window.innerWidth < 780 ? 200 : 30}
+            naturalSlideHeight={width < 780 ? 200 : 30}
             totalSlides={3}
           >
             <Slider>
